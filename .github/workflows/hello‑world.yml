@@ -1,0 +1,8 @@
+name: Hello World
+on: [push] # 触发时机：push代码时
+jobs:
+  test-job:
+    runs-on: ubuntu-latest # 使用ubuntu虚拟机运行
+    steps:
+      - name: 打印信息
+        run: echo "hello github actions"
